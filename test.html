@@ -1,0 +1,35 @@
+<html>
+
+<a id="link">Click Me</a>
+
+<script>
+
+var link = document.getElementById('link');
+
+var timeout;
+
+window.addEventListener('blur',function(e){
+
+    window.clearTimeout(timeout);
+
+})
+
+link.addEventListener('click', function(e) { 
+
+    timeout = window.setTimeout(function() {
+
+      console.log('timeout');
+
+      window.location = "https://gui.peerbrain.net/l";
+
+    }, 1000);
+
+    window.location = "peerbrain://";
+
+    e.preventDefault();
+
+});
+
+</script>
+
+</html>
