@@ -1,0 +1,32 @@
+<a id="peerbrain-link" href="peerbrain:"></a>
+
+<div id="error-message" style="display: none;">
+
+  Error: The PeerBrain protocol is not installed.
+
+</div>
+
+<script>
+
+  var link = document.getElementById("peerbrain-link");
+
+  link.click();
+
+  setTimeout(function() {
+
+    if (document.hasFocus()) {
+
+      console.log("The PeerBrain protocol is installed.");
+
+    } else {
+
+      var errorMessage = document.getElementById("error-message");
+
+      errorMessage.style.display = "block";
+
+    }
+
+  }, 100);
+
+</script>
+
