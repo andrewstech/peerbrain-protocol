@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    
+
+    <meta charset="utf-8">
+
+    <title>PeerBrain</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=2.0, user-scalable=0, minimal-ui">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" href="https://appsrv1-147a1.kxcdn.com/dattaable/plugins/animation/css/animate.min.css">
+
+    <link rel="stylesheet" href="https://appsrv1-147a1.kxcdn.com/dattaable/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://andrewstech.github.io/public/peer-brain/style.css">
+
+    
+
+</head>
+
+<body>
+
+    
+
+       
+
+    <div class="auth-wrapper">
+
+        <div class="auth-content">
+
+            <div class="auth-bg">
+
+                <span class="r"></span>
+
+                <span class="r s"></span>
+
+                <span class="r s"></span>
+
+                <span class="r"></span>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-body text-center">
+
+                    <p class="mb-0 text-muted disabled"><a href="" class="large">Peer Brain</a></p>
+
+					<div>                        <p class="mb-0 text-muted disabled"><a href="" disabled>Password Reset</a></p>
+
+                            <a id="link">Click Me</a>
+
+
+
+					</div>
+
+                    <br />
+
+                    <br />
+
+                    
+
+                    <a class="fa fa-github" style="font-size:24px" href="https://github.com/shandralor/PeerBrain"></a>
+
+                    <br />
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+    <!-- Required Js -->
+  <script>
+
+var link = document.getElementById('link');
+
+var timeout;
+
+window.addEventListener('blur',function(e){
+
+    window.clearTimeout(timeout);
+
+})
+
+link.addEventListener('click', function(e) { 
+
+    timeout = window.setTimeout(function() {
+
+      console.log('timeout');
+
+      window.location = "https://gui.peerbrain.net/l";
+
+    }, 1000);
+
+    window.location = "peerbrain://";
+
+    e.preventDefault();
+
+});
+
+</script>
+
+    
+
+    <!-- Specific Page JS goes HERE  -->
+
+        
+
+</body>
+
+</html>
